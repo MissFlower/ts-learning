@@ -1,0 +1,18 @@
+{
+  "name": "use-test-array-map",
+  "version": "1.0.0",
+  "description": "use a-test-array-map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "DoveyLoveyCira",
+  "license": "ISC",
+  "devDependencies": {
+    "a-test-array-map": "^1.0.0",
+    "typescript": "^4.1.2"
+  }
+}

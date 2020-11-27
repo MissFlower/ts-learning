@@ -4,7 +4,7 @@
  * @Author: AiDongYang
  * @Date: 2020-11-20 13:31:51
  * @LastEditors: AiDongYang
- * @LastEditTime: 2020-11-20 17:23:26
+ * @LastEditTime: 2020-11-26 19:01:42
  */
 // 布尔类型
 const bool: boolean = false
@@ -39,7 +39,7 @@ arr = [1, 2, 3]
 // 写法2
 // let arr1: Array<number>
 // 多种类型的数组
-const arr3: (number | string)[] = [1, '2']
+const arr3: Array<number | string> = [1, '2']
 
 // 元组类型  固定长度 固定位置
 let tuple: [string, number, boolean]
@@ -114,8 +114,8 @@ function getObject(obj: object): void {
 // }
 // 类型断言写法1
 const getLength1 = (target: number | string): number => {
-  if ((<string>target).length || (<string>target).length === 0) {
-    return (<string>target).length
+  if ((target as string).length || (target as string).length === 0) {
+    return (target as string).length
   } else {
     return target.toString().length
   }

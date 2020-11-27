@@ -1,0 +1,17 @@
+{
+  "name": "a-test-array-map",
+  "version": "1.0.0",
+  "description": "array map function use ts",
+  "main": "./dist/test-array-map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "DoveyLoveyCora",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}

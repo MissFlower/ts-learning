@@ -1,12 +1,3 @@
-// {
-//     "defaultSeverity": "error",
-//     "extends": [
-//         "tslint:recommended"
-//     ],
-//     "jsRules": {},
-//     "rules": {},
-//     "rulesDirectory": []
-// }
 {
 	"defaultSeverity": "error",
 	"extends": [
@@ -78,7 +69,7 @@
  
         // 维护性功能
         "indent": [true, "spaces", 2],// 每行开始以2个空格符开始
-        "max-classes-per-file": [true, 2],// 每个文件中可定义类的个数
+        "max-classes-per-file": [true, 20],// 每个文件中可定义类的个数
         "max-file-line-count": [true, 1000],// 定义每个文件代码行数
         "max-line-length": [true, 300],// 定义每行代码数
         "no-default-export": false, // 原本为true // 禁止使用export default关键字，因为当export对象名称发生变化时，需要修改import中的对象名。https://github.com/palantir/tslint/issues/1182#issue-151780453
@@ -98,7 +89,7 @@
             }
         ],
         "align": [true, "parameters", "arguments", "statements", "members", "elements"],// 定义对齐风格
-        "array-type": [true, "array"],// 建议使用T[]方式声明一个数组对象
+        "array-type": [true, "array-simple"],// 建议使用T[]方式声明一个数组对象
         "class-name": false,// 类名以大驼峰格式命名
         "comment-format": [true, "check-space"],// 定义注释格式
         "encoding": false,// 定义编码格式默认utf-8
@@ -125,7 +116,8 @@
         // 禁止给类的构造函数的参数添加修饰符
         "no-parameter-properties": false,
         "eofline": true, // 文件结尾必须要有空行
-        "no-angle-bracket-type-assertion": false // 类型断言必须使用as Type，禁止使用<Type>
+        "no-angle-bracket-type-assertion": true, // 类型断言必须使用as Type，禁止使用<Type>
+        "no-reference": false // 禁止使用reference
     },
 	"rulesDirectory": [],
 	"linterOptions": {

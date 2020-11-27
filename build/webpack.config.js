@@ -1,6 +1,15 @@
-const { resolve } = require('path')
+/*
+ * @Description: 
+ * @Version: 0.1.0
+ * @Author: AiDongYang
+ * @Date: 2020-11-20 18:55:55
+ * @LastEditors: AiDongYang
+ * @LastEditTime: 2020-11-25 20:53:06
+ */
+const { resolve, join } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
   entry: './src/index.ts',
   output: {
@@ -34,6 +43,14 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: resolve(__dirname, '../src/template/index.html')
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: join(__dirname, '../src/example/global.js'),
+          to: resolve(__dirname, '../dist')
+        }
+      ]
     })
   ]
 }
