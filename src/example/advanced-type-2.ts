@@ -4,7 +4,7 @@
  * @Author: AiDongYang
  * @Date: 2020-11-24 10:21:42
  * @LastEditors: AiDongYang
- * @LastEditTime: 2020-11-24 17:46:59
+ * @LastEditTime: 2021-06-03 11:18:31
  */
 // this类型使用 类链式操作
 class Counter {
@@ -288,11 +288,11 @@ type Type14 = Type13<IPart>
 // 不使用infer实现
 type Type15<T> = T extends any[] ? T[number] : T
 type Type16 = Type15<string>
-type Type17 = Type15<number|boolean []>
+type Type17 = Type15<boolean | number []>
 // 使用infer实现
 type Type18<T> = T extends Array<infer U> ? U : T
 type Type19 = Type18<string>
-type Type20 = Type18<number|boolean []>
+type Type20 = Type18<boolean | number []>
 
 
 // 预定义的有条件类型

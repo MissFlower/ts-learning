@@ -4,8 +4,9 @@
  * @Author: AiDongYang
  * @Date: 2020-11-23 17:25:51
  * @LastEditors: AiDongYang
- * @LastEditTime: 2020-11-24 17:47:07
+ * @LastEditTime: 2021-06-03 11:36:40
  */
+const a = 1
 // 交叉类型
 const mergeFunc = <T, U>(param1: T, param2: U): T & U => {
   let res = {} as T & U

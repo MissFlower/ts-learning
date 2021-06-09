@@ -8,7 +8,7 @@
     "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
     "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
     // "lib": [],                             /* Specify library files to be included in the compilation. 用于指定要包含在编译中的库文件 如你要使用一些ES6的新语法 你需要引入ES6这个库 也可以写成ES2015 */
-    // "allowJs": true,                       /* Allow javascript files to be compiled. 是否允许编译js文件 */
+    // "allowJs": true,                       /* Allow javascript files to be compiled. 默认false 是否允许编译js文件 */
     // "checkJs": true,                       /* Report errors in .js files. 是否检查和报告js文件的错误 */
     // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. 指定jsx代码用于的开发环境 */
     // "declaration": true,                   /* Generates corresponding '.d.ts' file. 用来指定是否在编译的时候生成相应的“.d.ts”声明文件 如果设置为true 编译每个ts文件后会生成一个js文件和一个声明文件 但是declaration和allowJs不能同时设置为true */
@@ -20,7 +20,7 @@
     // "composite": true,                     /* Enable project compilation 是否编译构建引用来的项目 */
     // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
     // "removeComments": true,                /* Do not emit comments to output. 是否将编译后的文件中注释删除掉 true删除 */
-    // "noEmit": true,                        /* Do not emit outputs. 不生成便以文件 很少用 */
+    // "noEmit": true,                        /* Do not emit outputs. 不生成编译文件 很少用 */
     // "importHelpers": true,                 /* Import emit helpers from 'tslib'. 是否引用tslib中的辅助工具函数 */
     // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
     // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). 是否将每个文件作为单独的模块 默认true 不可以和declaration同时设定 */

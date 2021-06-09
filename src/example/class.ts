@@ -4,7 +4,7 @@
  * @Author: AiDongYang
  * @Date: 2020-11-23 10:55:55
  * @LastEditors: AiDongYang
- * @LastEditTime: 2020-11-27 16:11:44
+ * @LastEditTime: 2021-06-03 11:48:36
  */
 
 // new过程：
@@ -102,6 +102,7 @@ const p2 = new Point1(2, 3)
 // console.log(Point1.getPoint()) // 类本身可以进行访问
 // console.log(p2.q) // error 实例访问不到静态属性
 // console.log(Point1.q) // 类本身可以进行访问
+// 父类上的静态方法子类也可以继承
 
 // 继承
 class Parent {
@@ -183,10 +184,12 @@ class Child1 extends Parent1 {
 }
 const c2 = new Child1(18, '北京')
 
-// private修饰符
-// 被修饰的属性和方法只能在类内部访问 子类和实例都无法访问
+// static修饰符
+// 被修饰的方法能被类调用 不能被实例调用 可以被子类继承
 // protected修饰符
 // 被修饰的属性和方法能在内部类中访问 也可以在该类的子类中访问 实例无法访问
+// private修饰符
+// 被修饰的属性和方法只能在类内部访问 子类和实例都无法访问
 
 // 相同点： 
 // 实例都是无法访问被private和protected修饰的属性和方法
@@ -331,5 +334,4 @@ class Infos {
   }
 }
 // console.log(create<Infos>(Infos))
-
 

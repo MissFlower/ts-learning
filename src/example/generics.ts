@@ -4,7 +4,7 @@
  * @Author: AiDongYang
  * @Date: 2020-11-20 17:53:58
  * @LastEditors: AiDongYang
- * @LastEditTime: 2020-11-23 10:51:44
+ * @LastEditTime: 2021-06-03 18:05:11
  */
 
 function handleData1<T>(x: T): T[] {
@@ -23,7 +23,7 @@ const getArray = <T>(value: T, times:number = 5): T[] => {
 }
 // console.log(getArray<number>(2))
 
-const getArray1 = <T, U>(param1: T, param2: U, times: number = 3): [T, U][] => {
+const getArray1 = <T, U>(param1: T, param2: U, times: number = 3): Array<[T, U]> => {
   return new Array(times).fill([param1, param2])
 }
 getArray1<number, string>(1, 'a').forEach(item => console.log(item[0], item[1]))

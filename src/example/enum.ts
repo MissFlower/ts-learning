@@ -4,10 +4,12 @@
  * @Author: AiDongYang
  * @Date: 2020-11-23 16:28:48
  * @LastEditors: AiDongYang
- * @LastEditTime: 2020-11-23 16:55:13
+ * @LastEditTime: 2021-06-03 11:39:23
  */
+(function():void {
+  const a = 1
 // 数字枚举
-enum Status {
+  enum Status {
   UPLOADING, // 0
   SUCCESS, // 1
   FAILED // 2
@@ -16,14 +18,14 @@ enum Status {
 // console.log(Status[2])
 
 // 字符串枚举
-enum Message {
+  enum Message {
   ERROR = 'error',
   SUCCESS = 'sucees',
   FAILED = ERROR
 }
 
 // 异构枚举
-enum Result {
+  enum Result {
   Failed = 0,
   Success = 'success'
 }
@@ -32,23 +34,25 @@ enum Result {
 // 1. enum E { A } 都是默认数值
 // 2. enum E { A = 'a' } 都是字符串
 // 3. enum E { A = 1 } 都是正负值
-enum Animals {
+  enum Animals {
   Dog = 1,
   Cat = 2
 }
-interface IDog {
+  interface IDog {
   type: Animals.Dog
 }
-const animal: IDog = {
+  const animal: IDog = {
   type:  Animals.Dog
 }
 
 // 编译后不是对象 直接替换值 应用场景后台接口返回值 定死
-const enum Animals1 {
+  const enum Animals1 {
   Success = 200,
   Failed = 300
 }
 
-window.onmousedown = function(e: MouseEvent): void {
+  window.onmousedown = function(e: MouseEvent): void {
   console.log(e)
 }
+
+})()

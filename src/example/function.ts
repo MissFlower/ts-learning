@@ -4,7 +4,7 @@
  * @Author: AiDongYang
  * @Date: 2020-11-20 17:02:27
  * @LastEditors: AiDongYang
- * @LastEditTime: 2020-11-20 17:52:46
+ * @LastEditTime: 2020-11-30 11:51:31
  */
 function add(arg1: number, arg2: number): number {
   return arg1 + arg2
@@ -42,3 +42,9 @@ function handleData(x: string | number): any {
 }
 // console.log(handleData('123').map(item => item.toFixed()))
 // console.log(handleData(123).map(item => item.length))
+
+// 函数双向协变
+// let funcA = (arg: boolean | string): void => {}
+// let funcB = (arg: boolean): void => {}
+// funcA = funcB
+// funcB = funcA

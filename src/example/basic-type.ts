@@ -4,7 +4,7 @@
  * @Author: AiDongYang
  * @Date: 2020-11-20 13:31:51
  * @LastEditors: AiDongYang
- * @LastEditTime: 2020-11-26 19:01:42
+ * @LastEditTime: 2021-06-03 14:31:07
  */
 // 布尔类型
 const bool: boolean = false
@@ -40,6 +40,7 @@ arr = [1, 2, 3]
 // let arr1: Array<number>
 // 多种类型的数组
 const arr3: Array<number | string> = [1, '2']
+const arr4: Array<number | string> = [1, '2', 3]
 
 // 元组类型  固定长度 固定位置
 let tuple: [string, number, boolean]
